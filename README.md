@@ -62,7 +62,7 @@ in this case, you shoud do the following:
 
 
 If that did not works, you probably faced a problem during the installation.  
-Try to uninstall and install it again by following the steps [Here]().
+Try to uninstall and install it again by following the steps [Here](https://ltuc.github.io/Prep-Install-MongoDB-guide-301/Uninstall-MongoDB).
 
 
 
