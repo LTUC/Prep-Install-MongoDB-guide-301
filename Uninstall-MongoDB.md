@@ -20,12 +20,12 @@ or by using one command
 `sudo apt-get purge mongodb-10gen`  
 `sudo apt-get autoremove`  
 
-Some of those commands may fail, depending on what packages you actually have installed, but that's okay.
+Some of those commands might fail, depending on what packages you actually have installed, but that's okay.
 
 This should also remove your config from /etc/mongodb.conf.
 
 ### Note
 
-if you did the steps in the [Microsoft’s directions](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-database#install-mongodb), you may have created a directory named "data".  
+if you did the steps using the [Microsoft’s directions](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-database#install-mongodb), you may have created a directory named "data".  
 remove this directory for now by:
 `rm -rf data`

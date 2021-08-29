@@ -22,7 +22,7 @@
 
 ### Start MongoDB using the operating system's built-in init system
 
-In the example above we ran MongoDB directly. Other tutorials may start MongoDB using the operating system's built-in init system. You might see the command `sudo systemctl status mongodb` used in tutorials or articles. Currently WSL does not have support for systemd (a service management system in Linux).
+In the example above, we ran MongoDB directly. Other tutorials might start MongoDB using the operating system's built-in init system. You might see the command `sudo systemctl status mongodb` used in tutorials or articles. Currently WSL does not have support for systemd (a service management system in Linux).
 
 You shouldn't notice a difference, but if a tutorial recommends using sudo systemctl, instead use: `sudo /etc/init.d/`.
 
@@ -31,7 +31,7 @@ You shouldn't notice a difference, but if a tutorial recommends using sudo syste
 
 ### Repair
 
-* In some cases, you may have a problem while starting the service.  
+* In some cases, you might have a problem while starting the service.  
 Try to do a repair by following these steps:
 
   1. Remove lock file.  
@@ -46,7 +46,7 @@ Try to do a repair by following these steps:
   4. Start mongo console.  
     `mongo`
     
-* When you do a repair and see this error " exception in initAndListen: NonExistentPath: Data directory /data/db not found "
+* When you do a repair and find this error " exception in initAndListen: NonExistentPath: Data directory /data/db not found "
 in this case, you shoud do the following:
   1. Make a directory to store data:   
   `mkdir -p data/db`
@@ -57,12 +57,12 @@ in this case, you shoud do the following:
   4. Start mongodb:    
   `sudo service mongodb start`
 
-* If you have error " Unit mongodb.service is masked ":    
+* If you have the error " Unit mongodb.service is masked ":    
   * run this: `sudo systemctl unmask mongodb` or `sudo /etc/init.d/mongodb unmask`
 
 
-If that did not works, you probably faced a problem during the installation.  
-Try to uninstall and install it again by following the steps [Here](https://ltuc.github.io/Prep-Install-MongoDB-guide-301/Uninstall-MongoDB).
+If that did not work, you probably faced a problem during the installation.  
+Try to uninstall and install it again by following the steps over [Here](https://ltuc.github.io/Prep-Install-MongoDB-guide-301/Uninstall-MongoDB).
 
 
 
